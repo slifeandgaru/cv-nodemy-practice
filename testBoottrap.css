@@ -1,0 +1,156 @@
+/*div{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    /*
+    relative: căn theo vị trí ban đầu
+    fixed: căn theo cả khung của trang web
+    absolute: căn theo thuộc tính ban đầu ???
+     
+}
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* div, img{
+    border: 1px solid black;
+} */
+
+body{
+    /* background: rgb(239, 239, 239); */
+    background: rgb(239, 239, 239);
+}
+
+.containers{
+    width: 80%;
+    margin: 0 auto;
+    border: none;
+    margin-top: 100px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    border: none;
+}
+
+.block1, .block2, .block3{
+    width: 30%;
+    position: relative;
+    border: none;
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: -0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(255, 121, 72);
+    border-radius: 15px;
+    border: none;
+    height: 250px;
+}
+
+
+
+.contact{
+    padding: 20px;
+    border: none;
+}
+
+.contact .combo{
+    border: none;
+}
+
+.title{
+    color: orangered;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.combo{
+    margin: 5px 0;
+}
+
+.combo-title{
+    font-weight: bold;
+}
+
+.info .lname{
+    color: rgb(239, 239, 239);
+    border: none;
+}
+.info .name{
+    border: none;
+}
+
+.combo2{
+    background: rgb(239, 239, 239);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.combo3{
+    background: rgb(239, 239, 239);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.block3 .combo2{
+    background: rgb(239, 239, 239);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.block3 .combo3{
+    background: rgb(239, 239, 239);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.combo2 .title{
+    margin-bottom: 20px;
+}
+.combo2 .conten{
+color: blue;
+}
+
+hr{
+    margin-bottom: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 200px; */
+    /* height: 1000px; */
+    /* border: none; */
+    /* border: none; */
+}
+
+.title1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* xóa chiều cao của thằng cha thì nó sẽ tự động bao lấy chiều cao 
+của các phần tử bên trong */
